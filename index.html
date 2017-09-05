@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />  
+    <meta name="apple-mobile-web-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" /> 
+    <meta name="format-detection" content="email=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset-app.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>中国移动</title>
+    <script>
+        (function(global){
+            function remChange(){
+                document.documentElement.style.fontSize=100*document.documentElement.clientWidth/750+'px';
+            }
+            remChange();
+            global.addEventListener('resize',remChange,false);
+
+            
+        })(window);
+    </script>
+</head>
+<body>
+    <!-- 页面html代码开始 -->
+    <div class="wrapper">
+    <div class="banner">
+        <img src="images/banner_01.jpg" alt="">
+    </div>
+    <div class="form">
+        <form action="">
+            <div class="form-group">
+                <i class="icon icon-user"></i><input type="number" placeholder="输入手机号">
+            </div>
+            <div class="form-group">
+                <i class="icon icon-car"></i><input type="number" placeholder="输入车主手机号">
+            </div>
+            <div class="form-group num-group">
+                <i class="icon icon-suo"></i><input class="numInput" type="number" placeholder="输入验证码"><span id="getNum" class="getNum">获取验证码</span>
+            </div>
+            <div class="form-group subbtn-group">
+                <button type="button" class="subbtn">领取500M流量</button>
+            </div>
+        </form>
+    </div>
+    <div class="rule">
+        <h4>活动规则</h4>
+        <p>
+            1、活动时间：2017年7月1日~2017年7月31日<br />
+            2、本活动仅限北京移动用户参与，用户在活动页验证成功后，即可获得一张500MB流量券，且活动期间，每位用户仅能获得一次奖励。<br />
+            3、获得奖励的用户需在7月31号前，登录北京移动手机营业厅到“我的-我的卡券”进行兑换，逾期则失效。<br />
+            4、若获奖用户处于停机、用户状态为保留期等非正常状态下，则会影响流量的发放；若获奖用户是物联卡、46元本地流量专享套餐卡、4G超级日租卡套餐等无法获得流量赠送。<br />
+            5、本活动最终解释权归北京移动手机营业厅所有。
+        </p>
+    </div>
+    </div>
+    <!-- 页面html代码结束 -->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
