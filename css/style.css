@@ -76,6 +76,7 @@ input::-webkit-input-placeholder{
     color: #fc9153;
     border-radius: 0.38rem 0 0 0.38rem;
     text-align: center;
+    font-size: 0.33rem;
 }
 .getNum.active {
     background-color: #e5e5e5;

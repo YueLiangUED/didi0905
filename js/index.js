@@ -9,8 +9,13 @@ $(document).ready(function(){
     //获取验证码事件
     var $getNum = $('#getNum');
     var flag = true;
-    $getNum.click(function () {
+    $getNum.on('click', function () {
         var $this = $(this);
+        var userPhone = $('#userPhone').val();
+        if (userPhone == '') {
+            alert('请输入用户手机号');
+            return false;
+        }
         if (flag == true) {
             flag = false;
             $this.addClass('active');
@@ -37,4 +42,25 @@ $(document).ready(function(){
             }
         }, 1000);
     }
+    // 验证不为空
+    $('.subbtn').on('click', function () {
+        var userPhone = $('#userPhone').val();
+        var carPhone = $('#carPhone').val();
+        var num = $('#num').val();
+        if (userPhone == '') {
+            alert('请输入用户手机号');
+            return false;
+        }
+        if (carPhone == '') {
+            alert('请输入车主手机号');
+            return false;
+        }
+        if (num == '') {
+            alert('请输入验证码');
+            return false;
+        }
+    });
+    $('#getNum').on('click', function () {
+        
+    });
 });
