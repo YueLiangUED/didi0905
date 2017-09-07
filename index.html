@@ -47,12 +47,137 @@
     <div class="rule">
         <h4>活动规则</h4>
         <p>
-            1、本活动仅限北京移动用户参与，用户在活动页验证成功后，即可获得一张500MB流量券，且活动期间，每位用户仅能获得一次奖励。<br />
-            2、获得奖励的用户需在30天内，登录北京移动手机营业厅到“我的-我的卡券”进行兑换，逾期则失效。<br />
-            3、若获奖用户处于停机、用户状态为保留期等非正常状态下，则会影响流量的发放；若获奖用户是物联卡、46元本地流量专享套餐卡、4G超级日租卡套餐等无法获得流量赠送。<br />
-            4、本活动最终解释权归北京移动手机营业厅所有。
+            1、本活动为北京滴滴快车联合北京移动为广大快车用户提供的车内惊喜福利，9月11日到9月18日期间打滴滴快车的用户都有机会获赠此惊喜。<br />
+            2、本活动仅限北京移动用户参与，用户在活动页验证成功后， 即可获得一张500MB-3天有效的流量券，活动期间，每位用户仅能获得一次奖励。<br />
+            3、获得奖励的用户需在2017年10月31日前，登录北京移动手机营业厅到“我的-我的卡券”进行兑换，兑换成功后即可获得500M本地通用流量，流量有效期3天，如逾期未兑换则失效。<br />
+            4、若获奖用户处于停机、用户状态为保留期等非正常状态下，则会影响流量的发放；若获奖用户是物联卡、46元本地流量专享套餐卡、4G超级日租卡套餐等无法获得流量赠送。<br />
+            5、卡券每日限量10万份，数量有限，先到先得，送完为止。<br />
+            6、本活动最终解释权归北京移动手机营业厅所有。<br />
         </p>
     </div>
+    </div>
+    <div id="mask" class="mask"></div>
+    <!-- 已过期弹窗 -->
+    <div class="modal modal-gq none">
+        <div class="modal-content pr">
+            <div class="modal-head"></div>
+            <div class="modal-body pr">
+                <div class="modal-body-top">已过期!</div>
+                <div class="modal-body-text">
+                    <p>
+                        活动已过期啦，<br />
+                        请登录北京移动手厅，<br />
+                        领取其他福利吧！
+                    </p>
+                </div>
+                <div class="modal-body-border"></div>
+                <div class="modal-close"><i class="icon-close"></i><i class="solid"></i></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.bj.10086.cn/m/khd/index.html?C=185"><button type="button" class="modal-footer-btn">立即登陆</button type="button"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 已领取弹窗 -->
+    <div class="modal modal-ylq none">
+        <div class="modal-content pr">
+            <div class="modal-head"></div>
+            <div class="modal-body pr">
+                <div class="modal-body-top">已领取!</div>
+                <div class="modal-body-text">
+                    <p>
+                        您已经领取过奖励了哦，<br />
+                        快登录北京移动手厅，<br />
+                        领取其他福利吧！
+                    </p>
+                </div>
+                <div class="modal-body-border"></div>
+                <div class="modal-close"><i class="icon-close"></i><i class="solid"></i></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.bj.10086.cn/m/khd/index.html?C=185"><button type="button" class="modal-footer-btn">立即登录</button type="button"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 恭喜您弹窗 -->
+    <div class="modal modal-gxn none">
+        <div class="modal-content pr">
+            <div class="modal-head"></div>
+            <div class="modal-body pr">
+                <div class="modal-body-top">恭喜您!</div>
+                <div class="modal-body-text">
+                    <p>
+                        获得500M流量券，快去登<br />
+                        录北京移动手厅兑换吧！
+                    </p>
+                </div>
+                <div class="modal-body-border"></div>
+                <div class="modal-close"><i class="icon-close"></i><i class="solid"></i></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.bj.10086.cn/m/khd/index.html?C=185"><button type="button" class="modal-footer-btn">立即兑换</button type="button"></a>
+            </div>
+        </div>
+    </div>
+    <!-- 验证码错误弹窗 -->
+    <div class="modal modal-codeErr none">
+        <div class="modal-content pr">
+            <div class="modal-head"></div>
+            <div class="modal-body pr">
+                <div class="modal-body-top">验证码错误</div>
+                <div class="modal-body-text">
+                    <p>
+                        请输入正确的<br />
+                        验证码！
+                    </p>
+                </div>
+                <div class="modal-body-border"></div>
+                <div class="modal-close"><i class="icon-close"></i><i class="solid"></i></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-footer-btn">确定</button type="button">
+            </div>
+        </div>
+    </div>
+    <!-- 很遗憾弹窗 -->
+    <div class="modal modal-hyh none">
+        <div class="modal-content pr">
+            <div class="modal-head"></div>
+            <div class="modal-body pr">
+                <div class="modal-body-top">很遗憾!</div>
+                <div class="modal-body-text">
+                    <p>
+                        本福利仅针对<br />
+                        北京移动用户哦！
+                    </p>
+                </div>
+                <div class="modal-body-border"></div>
+                <div class="modal-close"><i class="icon-close"></i><i class="solid"></i></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-footer-btn">确定</button type="button">
+            </div>
+        </div>
+    </div>
+    <!-- 已领完弹窗 -->
+    <div class="modal modal-ylw none">
+        <div class="modal-content pr">
+            <div class="modal-head"></div>
+            <div class="modal-body pr">
+                <div class="modal-body-top">很遗憾!</div>
+                <div class="modal-body-text">
+                    <p>
+                        今天的奖励领完啦！<br />
+                        可以明天再来哦！
+                    </p>
+                </div>
+                <div class="modal-body-border"></div>
+                <div class="modal-close"><i class="icon-close"></i><i class="solid"></i></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-footer-btn">确定</button type="button">
+            </div>
+        </div>
     </div>
     <!-- 页面html代码结束 -->
     <script src="js/zepto.min.js"></script>

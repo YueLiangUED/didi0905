@@ -60,7 +60,21 @@ $(document).ready(function(){
             return false;
         }
     });
-    $('#getNum').on('click', function () {
+
+
+    $('.modal').on('touchmove', function (event) {
+        event.preventDefault();
+    });
+    // 关闭弹窗
+    $('.modal-footer button').on('click', function (event) {
+        $('#mask').hide();
+        var $modal = $(this).parents('.modal');
+        $modal.hide();
         
+    });
+    $('.modal-close').on('click', function (event) {
+        $('#mask').hide();
+        var $modal = $(this).parents('.modal');
+        $modal.hide();
     });
 });
